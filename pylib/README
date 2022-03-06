@@ -1,0 +1,34 @@
+
+|--------------------------------------------------------|
+|pdict.cpp    | hash table
+|pdict.h      |                                           
+|--------------------------------------------------------|
+|py_conf.cpp  | config operations
+|py_conf.h    |
+|--------------------------------------------------------|
+|py_log.cpp   | log lib
+|py_log.h     |
+|--------------------------------------------------------|
+|py_net.cpp   | wrapper of net functions
+|py_net.h     |
+|--------------------------------------------------------|
+|py_sign.cpp  | string signature
+|py_sign.h    |
+|--------------------------------------------------------|
+|py_utils.cpp | some common functions
+|py_utils.h   |
+|--------------------------------------------------------|
+|sockpack.cpp | text data transfer protocol wrapper
+|sockpack.h   |
+|--------------------------------------------------------|
+|sockpool.cpp | muti-thread socket connection pool
+|sockpool.h   |
+|--------------------------------------------------------|
+|wordseg.cpp  | chinese word segment lib 
+|wordseg.h    |
+|--------------------------------------------------------|
+|py_queue.h   | template circle queue
+|--------------------------------------------------------|
+|py_code.cpp  | code transform
+|py_code.h    |
+|--------------------------------------------------------|

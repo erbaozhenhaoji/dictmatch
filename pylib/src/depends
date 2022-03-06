@@ -1,0 +1,13 @@
+intmap.o: intmap.cpp
+pdict.o: pdict.cpp
+py_code.o: py_code.cpp
+py_conf.o: py_conf.cpp
+py_http.o: py_http.cpp py_url.h py_net.h
+py_log.o: py_log.cpp
+py_net.o: py_net.cpp
+py_sign.o: py_sign.cpp
+py_url.o: py_url.cpp
+py_utils.o: py_utils.cpp
+sockpack.o: sockpack.cpp
+sockpool.o: sockpool.cpp
+wordseg.o: wordseg.cpp

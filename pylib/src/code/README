@@ -1,0 +1,34 @@
+This file is written in UTF-8
+
+简介：
+    提供了中文编码转换系列函数的C实现, 在 Red Hat Enterprise Linux Server release 5.4 编译运行通过。
+    UTF8与UNICODE互转
+    GBK与UTF8互转
+    BIG5与UTF8互转
+    BIG5与GBK互转
+    大写与小写互转（UTF8）
+    全角与半角互转(UTF8)
+    简体与繁体互转(UTF8)
+    中文归一化（UTF8） 
+
+编译：
+    1. 在项目根目录执行make, 编译libcode.a
+    2. 在tools目录执行make,  编译各种工具
+
+运行：
+
+usage : ./trans_code -lubgjn <infile >outfile
+      : -l to lower(utf8)
+      : -u to upper(utf8)
+      : -b to banjiao(utf8)
+      : -g gbk to utf8
+      : -j utf8 to gbk
+      : -n utf8 normalize (to lower, banjiao, and simplified word)
+
+For Example:
+
+$ echo "123419867个外資企業来到ａｂＧ市，学习AbC" |./trans_code -n
+123419867个外资企业来到abg市,学习abc
+
+
+
