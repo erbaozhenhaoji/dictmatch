@@ -805,7 +805,7 @@ int rawtree_to_aytree(rawnode_t* root, aytree_t* aytree)
        return subtree_to_ay(root, 0, aytree);
 }
 
-int g_child_value_array[65535];
+int g_child_value_array[MAX_SYMBOL_VALUE];
 
 int subtree_to_ay(rawnode_t* curnode, unsigned int curstate, aytree_t* aytree)
 {
@@ -843,7 +843,7 @@ int subtree_to_ay(rawnode_t* curnode, unsigned int curstate, aytree_t* aytree)
         // calculate the value of base[curstate] = bval
         //unsigned int bval = MAX_SYMBOL_VALUE;
         int* child_value_array = g_child_value_array;
-        int  child_value_array_size = 65535;
+        int  child_value_array_size = MAX_SYMBOL_VALUE;
         int  child_num = 0;
         for(child=curnode->child;child!=NULL;child=child->next){
                 child_value_array[child_num++]=child->value;
