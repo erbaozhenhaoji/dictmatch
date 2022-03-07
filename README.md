@@ -20,3 +20,25 @@ make
 cd test
 make
 ```
+
+# 运行测试样例
+在test下运行
+
+## 从文本词典构建二进制词典
+```bash
+./build_dmdict -r dict.txt -b dict.bin 
+```
+## 测试关键词匹配
+```bash
+./do_dictmatch -d dict.bin -f test_data.txt -p
+```
+文件名和参数可以自行调节。
+
+# 构建自己的应用
+请参考test中的build_dict.cpp和do_dictmatch.cpp的写法。
+此外还要自己编辑两个dm_prop.h, dm_prop.cpp两个文件，这是词典属性定义文件。因为每个应用都需要自己词条属性定义。除了属性定义，dm_prop还包含一个自定义的回调函数，在构建词典的过程中调用。这个函数定义了描述词条属性的字符串如何转化成一个int。
+
+# 遗留问题
+* 因为词典从文本到二进制的构建过程，此库不支持动态添加词条。需要经常修改词典的，可以暂时用运维方法解决（进程交替重启）。
+* 支持支20M以内的关键词词典。
+* 
