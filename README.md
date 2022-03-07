@@ -12,10 +12,11 @@
 * 代码量不同：本库函数代码量只是一套成熟分词系统的1/10.
 
 # 编译
+···
 cd pylib
 make
 cd ..
 make
 cd test
 make
-
+···
